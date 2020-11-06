@@ -1,7 +1,6 @@
 package com.example.iclock;
 
 import android.content.Context;
-import android.content.res.ColorStateList;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -52,13 +51,13 @@ public class EventDetails extends Fragment {
         View root = inflater.inflate(R.layout.fragment_event_details, container, false);
         context = container.getContext();
 
-        event_name = root.findViewById(R.id.event_details_text_event_name);
-        event_description = root.findViewById(R.id.event_details_text_description);
+        event_name = root.findViewById(R.id.event_details_text_book_name);
+        event_description = root.findViewById(R.id.book_details_text_description);
         event_image = root.findViewById(R.id.event_details_image);
         event_start_date = root.findViewById(R.id.event_details_registration_start_date);
         event_end_date = root.findViewById(R.id.event_details_registration_end_date);
-        certification = root.findViewById(R.id.event_details_certification);
-        contact = root.findViewById(R.id.event_details_contactno);
+        certification = root.findViewById(R.id.book_details_price);
+        contact = root.findViewById(R.id.book_details_contactno);
 
 
         Picasso.get().load(createUserEvent.getImageUrl())

@@ -95,9 +95,9 @@ public class AddBookFragment extends Fragment {
         owner_name = root.findViewById(R.id.owner_name);
         contact_number = root.findViewById(R.id.contact_number);
         publishing_year = root.findViewById(R.id.publishing_year);
-        optional_details = root.findViewById(R.id.optional_detail);
-        bookForSemester = root.findViewById(R.id.book_for_semester);
-        bookForBranch = root.findViewById(R.id.book_for_branch);
+//        optional_details = root.findViewById(R.id.optional_detail);
+//        bookForSemester = root.findViewById(R.id.book_for_semester);
+//        bookForBranch = root.findViewById(R.id.book_for_branch);
 
 
         //storage references and creating the directories in firebase using below two lines

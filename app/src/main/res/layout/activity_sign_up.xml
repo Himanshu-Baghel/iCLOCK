@@ -24,8 +24,8 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="421dp"
-        android:layout_height="348dp"
+        android:layout_width="410dp"
+        android:layout_height="345dp"
         android:layout_marginStart="6dp"
         android:layout_marginEnd="6dp"
         android:orientation="vertical"
@@ -33,7 +33,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.428">
+        app:layout_constraintVertical_bias="0.383">
 
         <EditText
             android:id="@+id/user_username"
@@ -164,7 +164,7 @@
         android:fontFamily="@font/aclonica"
         android:text="@string/register"
         android:textColor="@color/design_default_color_on_secondary"
-        android:textSize="20sp"
+        android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="156dp"
         android:fontFamily="@font/aclonica"
-        android:text="Insert Your Event Image"
+        android:text="@string/insert_your_event_image"
         android:textAlignment="center"
         android:textColor="#090909"
         android:textSize="26sp"
@@ -36,7 +36,8 @@
         app:layout_constraintBottom_toTopOf="@+id/choose_file_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/heading_text" />
+        app:layout_constraintTop_toBottomOf="@+id/heading_text"
+        android:contentDescription="@string/todo2" />
 
     <Button
         android:id="@+id/choose_file_btn"
@@ -47,7 +48,7 @@
         android:fontFamily="@font/aclonica"
         android:paddingLeft="3sp"
         android:paddingRight="3sp"
-        android:text="Choose File"
+        android:text="@string/choose_file"
         android:textColor="@color/design_default_color_secondary_variant"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/next_btn"
@@ -66,7 +67,7 @@
         android:paddingLeft="3sp"
         android:paddingRight="3sp"
         android:shadowColor="#018786"
-        android:text="Next"
+        android:text="@string/next"
         android:textColor="@android:color/white"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -1,6 +1,5 @@
 package com.example.iclock;
 
-import android.app.Activity;
 import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
@@ -15,12 +14,10 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.navigation.NavController;
-import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.squareup.picasso.Picasso;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -110,7 +107,7 @@ public class EventRecyclerViewAdapter extends RecyclerView.Adapter<EventRecycler
             super(itemView);
             //this is the itemView inflated from our event_item_layout and that's why we can get
             // id's by using ths itemView as reference as shown
-            eventName = itemView.findViewById(R.id.event_name_card);
+            eventName = itemView.findViewById(R.id.event_name);
             startDate = itemView.findViewById(R.id.start_date);
             eventImage = itemView.findViewById(R.id.event_image);
             mView = itemView;
