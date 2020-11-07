@@ -1,12 +1,22 @@
 package com.example.iclock;
 
+import android.app.ProgressDialog;
+import android.content.ContentResolver;
+import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
+import android.webkit.MimeTypeMap;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
@@ -20,6 +30,11 @@ import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+import com.squareup.picasso.Picasso;
 
 public class DashboardActivity extends AppCompatActivity {
     private ImageView profile_picture;
@@ -29,6 +44,13 @@ public class DashboardActivity extends AppCompatActivity {
     private NavigationView navigationView;
     private static final String TAG = "checkfixes";
     private Toolbar toolbar;
+    private FirebaseDatabase mdatabase;
+    private DatabaseReference mRef;
+    private static final int PICK_IMAGE_REQUEST = 1;
+    private Uri image_uri;
+    private StorageReference storageReference;
+    private Context context;
+    private ProgressDialog progressDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +65,7 @@ public class DashboardActivity extends AppCompatActivity {
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         String email = user.getEmail();
         userEmail.setText(email);
+
 
         //setting toolbar
         toolbar = findViewById(R.id.toolbar);
@@ -102,4 +125,9 @@ public class DashboardActivity extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(),MainActivity.class));
         finish();
     }
+
+    //upload profile pic
+
+
+
 }

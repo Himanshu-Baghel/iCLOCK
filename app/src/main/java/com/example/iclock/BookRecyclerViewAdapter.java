@@ -15,15 +15,12 @@ import androidx.navigation.NavController;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.iclock.dummy.CreateBook;
-import com.example.iclock.dummy.DummyContent.DummyItem;
+
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
-/**
- * {@link RecyclerView.Adapter} that can display a {@link DummyItem}.
- * TODO: Replace the implementation with code for your data type.
- */
+
 public class BookRecyclerViewAdapter extends RecyclerView.Adapter<BookRecyclerViewAdapter.ViewHolder>{
 
     private List<CreateBook> bookList;
